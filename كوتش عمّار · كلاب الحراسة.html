@@ -1,0 +1,386 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>كوتش عمّار · كلاب الحراسة</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: firm, direct. Dark hero band with lead form, then situations, risk, 4-stage method, control self-test, plans, FAQ. */
+:root{
+  --bg:#F2EFE9; --surface:#FFFFFF; --ink:#1C201D; --ink-2:#2A302B; --sand:#E4DCCD; --text:#1F2320; --muted:#5E625C;
+  --line:#DDD6C8; --accent:#B4552A; --on-accent:#FFFFFF; --olive:#56603F; --olive-soft:#E3E5D6; --on-ink:#F2EFE9; --warn:#9A3B22;
+  --font:"IBM Plex Sans Arabic", Tahoma, "Segoe UI", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#141714; --surface:#1E221F; --ink:#0D0F0D; --ink-2:#181B18; --sand:#2C2A24; --text:#ECE9E2; --muted:#A9ACA4;
+  --line:#343832; --accent:#E07A4A; --on-accent:#1A0D06; --olive:#AEBB8C; --olive-soft:#262B20; --on-ink:#ECE9E2; --warn:#F09A78; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#141714; --surface:#1E221F; --ink:#0D0F0D; --ink-2:#181B18; --sand:#2C2A24; --text:#ECE9E2; --muted:#A9ACA4;
+  --line:#343832; --accent:#E07A4A; --on-accent:#1A0D06; --olive:#AEBB8C; --olive-soft:#262B20; --on-ink:#ECE9E2; --warn:#F09A78; color-scheme:dark}
+*{box-sizing:border-box}
+html{direction:rtl}
+body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:18px;line-height:1.75;margin:0;padding-bottom:84px}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--ink)}
+.in{max-width:1100px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{margin:0;line-height:1.3;text-wrap:balance;font-weight:700}
+h1{font-size:clamp(2.1rem,5.6vw,3.5rem)}
+h2{font-size:clamp(1.6rem,3.8vw,2.3rem)}
+h3{font-size:1.18rem}
+p{margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
+.band{padding-block:60px}
+.band.alt{background:var(--surface)}
+.kick{color:var(--accent);font-weight:700;font-size:.95rem}
+.muted{color:var(--muted)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 26px;border-radius:10px;border:0;cursor:pointer;
+  background:var(--accent);color:var(--on-accent);font:700 1.05rem var(--font);text-decoration:none}
+.btn.line{background:transparent;color:var(--text);border:2px solid var(--line)}
+.row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--ink);color:var(--on-ink)}
+header .in{display:flex;justify-content:space-between;align-items:center;min-height:64px;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.1rem}
+.mono{width:38px;height:38px;border-radius:8px;background:var(--accent);color:var(--on-accent);display:grid;place-items:center;font-weight:700}
+.brand small{display:block;font-weight:400;font-size:.78rem;opacity:.75;line-height:1.2}
+header .btn{min-height:42px;padding:0 18px;font-size:.95rem}
+
+/* hero */
+.hero{background:var(--ink);color:var(--on-ink)}
+.hero .in{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:start;padding-block:44px 56px}
+.hero .in>*{min-width:0}
+.hero .copy{display:grid;gap:18px;padding-top:6px}
+.hero .lead{opacity:.85;font-size:1.1rem;max-width:56ch}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.ticks{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.ticks li{display:flex;gap:10px;font-weight:500}
+.ticks li::before{content:"■";color:var(--accent);font-size:.7em;margin-top:.55em}
+.dogmark{display:flex;gap:14px;align-items:center;opacity:.9;font-size:.92rem}
+.dogmark svg{width:72px;height:72px;flex:none}
+
+.leadcard{background:var(--surface);color:var(--text);border-radius:18px;padding:24px;display:grid;gap:16px;scroll-margin-top:90px;box-shadow:0 20px 50px rgba(0,0,0,.3)}
+.lc-head b{font-size:1.3rem;display:block}.lc-head span{font-size:.9rem}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+legend{font-weight:700;font-size:.95rem;margin-bottom:8px;padding:0}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{border:1.5px solid var(--line);background:var(--bg);color:var(--text);border-radius:8px;padding:7px 12px;font:500 .95rem var(--font);cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ink-2);border-color:var(--ink-2);color:var(--on-ink)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.leadcard label{font-weight:700;font-size:.95rem;display:block;margin-bottom:6px}
+.leadcard select,.leadcard input{width:100%;min-height:50px;border-radius:10px;border:1.5px solid var(--line);background:var(--bg);color:var(--text);font:500 1rem var(--font);padding:0 12px}
+.send{width:100%;min-height:58px;font-size:1.12rem}
+.err{color:var(--warn);font-weight:700;font-size:.92rem}
+.fine{font-size:.86rem;color:var(--muted)}
+
+/* strip */
+.strip{display:grid;grid-template-columns:repeat(4,1fr);background:var(--surface);border-bottom:1px solid var(--line)}
+.strip div{padding:20px 12px;text-align:center;display:grid;gap:2px}
+.strip div+div{border-inline-start:1px solid var(--line)}
+.strip b{font-size:1.8rem;line-height:1.2;color:var(--accent)}
+.strip span{font-size:.9rem;color:var(--muted)}
+
+/* situations */
+.sits{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:26px}
+.sit{background:var(--surface);border:1px solid var(--line);border-inline-start:4px solid var(--accent);border-radius:10px;padding:18px 20px;font-weight:600}
+.truth{margin-top:22px;background:var(--ink);color:var(--on-ink);border-radius:16px;padding:26px;display:grid;gap:10px;max-width:860px}
+.truth b{font-size:1.2rem}
+
+/* risk */
+.risk{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:24px}
+.risk div{border-top:3px solid var(--ink-2);padding-top:14px;display:grid;gap:6px}
+.risk p{color:var(--muted);font-size:.98rem}
+
+/* method */
+.stages{list-style:none;margin:26px 0 0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--surface)}
+.stages li{padding:22px;display:grid;gap:8px;align-content:start}
+.stages li+li{border-inline-start:1px solid var(--line)}
+.stages .n{font-size:.85rem;font-weight:700;color:var(--accent)}
+.stages p{color:var(--muted);font-size:.96rem}
+.stages .wk{font-size:.82rem;font-weight:600;color:var(--olive);background:var(--olive-soft);border-radius:6px;padding:2px 8px;justify-self:start}
+
+/* test */
+.test{display:grid;grid-template-columns:.9fr 1.1fr;gap:32px;align-items:start}
+.test>*{min-width:0}
+.qs{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:8px 22px}
+.q{display:flex;justify-content:space-between;align-items:center;gap:14px;padding-block:14px;border-bottom:1px solid var(--line)}
+.q:last-child{border-bottom:0}
+.q span{font-weight:500}
+.yn{display:flex;gap:6px;flex:none}
+.yn button{min-width:56px;min-height:40px;border-radius:8px;border:1.5px solid var(--line);background:var(--bg);color:var(--text);font:600 .95rem var(--font);cursor:pointer}
+.yn button[aria-pressed="true"].y{background:var(--olive);border-color:var(--olive);color:var(--surface)}
+.yn button[aria-pressed="true"].n{background:var(--warn);border-color:var(--warn);color:var(--surface)}
+.score{background:var(--ink);color:var(--on-ink);border-radius:16px;padding:24px;display:grid;gap:12px}
+.meter{height:12px;border-radius:6px;background:var(--ink-2);overflow:hidden}
+.meter i{display:block;height:100%;background:var(--accent);width:0;transition:width .3s}
+.score .big{font-size:2.2rem;font-weight:700;line-height:1.1}
+
+/* plans */
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:26px}
+.plan{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:24px;display:flex;flex-direction:column;gap:12px}
+.plan.hot{border:2px solid var(--accent);position:relative}
+.badge{position:absolute;top:-14px;inset-inline-start:22px;background:var(--accent);color:var(--on-accent);border-radius:6px;padding:2px 12px;font-size:.82rem;font-weight:700}
+.plan .for{font-size:.88rem;font-weight:600;color:var(--olive)}
+.plan ul{margin:0;padding-inline-start:20px;color:var(--muted);font-size:.96rem;display:grid;gap:4px;flex:1}
+.pp{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.pp div{background:var(--bg);border-radius:10px;padding:10px 12px}
+.pp small{display:block;color:var(--muted);font-size:.8rem}
+.pp strong{font-size:1.2rem;font-variant-numeric:tabular-nums}
+.pp .mo{outline:2px solid var(--olive)}
+.pp .solo{grid-column:1/-1}
+.plan .btn{width:100%}
+.entry{margin-top:16px;border:2px dashed var(--ink-2);border-radius:14px;padding:18px 22px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px;align-items:center}
+.guar{margin-top:16px;background:var(--olive-soft);border-radius:14px;padding:18px 22px;display:grid;gap:4px}
+.guar b{color:var(--olive)}
+
+details{border-bottom:1px solid var(--line);padding-block:15px}
+summary{cursor:pointer;font-weight:700;list-style:none;display:flex;justify-content:space-between;gap:10px}
+summary::after{content:"+";color:var(--accent);font-size:1.3rem;line-height:1}
+details[open] summary::after{content:"–"}
+details p{color:var(--muted);margin-top:8px;max-width:65ch}
+
+.final{background:var(--ink);color:var(--on-ink);border-radius:20px;padding:46px 24px;display:grid;gap:14px;justify-items:center;text-align:center}
+.final p{opacity:.85;max-width:54ch}
+.num{direction:ltr;unicode-bidi:isolate;opacity:.8;font-size:.9rem}
+.sticky{position:fixed;inset:auto 0 0;z-index:6;background:var(--ink);display:none;
+  padding:10px max(16px,env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
+.sticky .btn{width:100%}
+footer{padding-block:28px;text-align:center;color:var(--muted);font-size:.85rem}
+@media (max-width:860px){
+  .hero .in,.test{grid-template-columns:minmax(0,1fr)}
+  .sits,.risk,.plans{grid-template-columns:1fr}
+  .stages{grid-template-columns:1fr 1fr}
+  .stages li:nth-child(3){border-inline-start:0}.stages li:nth-child(n+3){border-top:1px solid var(--line)}
+  .strip{grid-template-columns:1fr 1fr}
+  .strip div:nth-child(3){border-inline-start:0}.strip div:nth-child(n+3){border-top:1px solid var(--line)}
+  header .btn{display:none}
+  .sticky{display:block}
+  .band{padding-block:44px}
+  .dogmark{display:none}
+}
+@media (max-width:480px){.stages{grid-template-columns:1fr}.stages li{border-inline-start:0!important}.stages li+li{border-top:1px solid var(--line)}.two{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){.meter i{transition:none}}
+</style>
+<script>document.body.dir="rtl";document.documentElement.lang="ar";</script>
+
+<header><div class="in">
+  <div class="brand"><span class="mono">ع</span><div>كوتش عمّار<small>تدريب كلاب الحراسة والطاعة · جدة</small></div></div>
+  <a class="btn" href="#lead">تقييم مجاني لكلبك</a>
+</div></header>
+
+<main>
+<section class="hero"><div class="in">
+  <div class="copy">
+    <p class="kick">لأصحاب كلاب الحراسة في جدة</p>
+    <h1>كلب قوي… <em>يسمع كلمتك من أول مرة.</em></h1>
+    <p class="lead">أنا عمّار، أدرّب الكلاب من أكثر من ١٦ سنة. أحوّل كلبك من كلب قوي ما ينضبط، لكلب يحرس بيتك ويوقف بكلمة منك: قدّام الضيوف، وفي الشارع، وبدون رسن.</p>
+    <ul class="ticks">
+      <li>طاعة كاملة: اجلس، انتظر، تعال، اترك… من أول أمر</li>
+      <li>حراسة منضبطة: ينبّه ويحمي، ويوقف لما تقول له</li>
+      <li>نتدرب في بيتك، أو في مزرعة تدريب لمدة ٣ إلى ٤ أسابيع</li>
+    </ul>
+    <div class="dogmark" aria-hidden="true">
+      <svg viewBox="0 0 200 200"><path d="M44 96 L52 20 L92 62Z M156 96 L148 20 L108 62Z" fill="#2B2420"/><path d="M58 78 L60 40 L82 64Z M142 78 L140 40 L118 64Z" fill="#6B4A3A"/>
+      <path d="M100 52 C60 52 44 84 46 116 C48 150 70 176 100 182 C130 176 152 150 154 116 C156 84 140 52 100 52Z" fill="#C48A4E"/>
+      <path d="M100 52 C76 52 64 70 62 92 C76 84 90 84 100 92 C110 84 124 84 138 92 C136 70 124 52 100 52Z" fill="#2B2420"/>
+      <path d="M78 130 C78 116 88 108 100 108 C112 108 122 116 122 130 L122 160 C116 170 84 170 78 160Z" fill="#2B2420"/>
+      <circle cx="80" cy="108" r="6" fill="#1A1410"/><circle cx="120" cy="108" r="6" fill="#1A1410"/><circle cx="82" cy="106" r="2" fill="#fff"/><circle cx="122" cy="106" r="2" fill="#fff"/>
+      <ellipse cx="100" cy="134" rx="11" ry="8" fill="#0F0C0A"/></svg>
+      <span>جيرمن شيبرد · مالينوا · روت وايلر · دوبرمان · كين كورسو · وكل سلالات الحراسة</span>
+    </div>
+  </div>
+
+  <form class="leadcard" id="lead" novalidate>
+    <div class="lc-head"><b>احجز تقييم مجاني لكلبك</b><span class="muted">٣٠ ثانية · بدون أي التزام</span></div>
+    <fieldset><legend>١. وش المشكلة؟ (اختر كل اللي ينطبق)</legend>
+      <div class="chips" id="probs">
+        <button type="button" class="chip" data-v="ما يسمع الكلام">ما يسمع الكلام</button>
+        <button type="button" class="chip" data-v="يهجم على الضيوف">يهجم على الضيوف</button>
+        <button type="button" class="chip" data-v="ما يرجع لما أناديه">ما يرجع لما أناديه</button>
+        <button type="button" class="chip" data-v="يسحب بقوة">يسحب بقوة</button>
+        <button type="button" class="chip" data-v="يسمع لشخص واحد بس">يسمع لشخص واحد بس</button>
+        <button type="button" class="chip" data-v="عدواني مع الكلاب">عدواني مع الكلاب</button>
+        <button type="button" class="chip" data-v="أبغى حراسة منضبطة">أبغى حراسة منضبطة</button>
+        <button type="button" class="chip" data-v="جرو حراسة جديد">جرو حراسة جديد</button>
+      </div></fieldset>
+    <div class="two">
+      <div><label for="f-breed">٢. السلالة</label>
+        <select id="f-breed"><option value="">اختر</option><option>جيرمن شيبرد</option><option>مالينوا</option><option>روت وايلر</option><option>دوبرمان</option><option>كين كورسو</option><option>بوكسر</option><option>كانغال</option><option>هاسكي</option><option>سلالة ثانية</option></select></div>
+      <div><label for="f-age">٣. العمر</label>
+        <select id="f-age"><option value="">اختر</option><option>أقل من ٦ شهور</option><option>٦ إلى ١٢ شهر</option><option>١ إلى ٣ سنوات</option><option>أكبر من ٣ سنوات</option></select></div>
+    </div>
+    <div class="two">
+      <div><label for="f-area">٤. الحي</label>
+        <select id="f-area"><option value="">اختر</option><option>أبحر</option><option>الشاطئ</option><option>الروضة</option><option>الزهراء</option><option>المحمدية</option><option>النعيم</option><option>حي ثاني</option></select></div>
+      <div><label for="f-name">٥. اسمك (اختياري)</label><input id="f-name" type="text" autocomplete="given-name"></div>
+    </div>
+    <p class="err" id="f-err" hidden>اختر مشكلة وحدة على الأقل والسلالة.</p>
+    <a class="btn send" id="f-send" href="#" target="_blank" rel="noopener">أرسل على واتساب ←</a>
+    <p class="fine">يفتح واتساب برسالة جاهزة. عمّار يرد عليك خلال [ساعتين] في أوقات العمل.</p>
+  </form>
+</div></section>
+
+<div class="strip">
+  <div><b>+١٦</b><span>سنة خبرة في التدريب</span></div>
+  <div><b>كل</b><span>سلالات الحراسة</span></div>
+  <div><b>٣–٤</b><span>أسابيع لطاعة ثابتة</span></div>
+  <div><b>١٠٠٪</b><span>تسليم لك ولأهل البيت</span></div>
+</div>
+
+<section class="band"><div class="in">
+  <p class="kick">تعرف هالمواقف؟</p>
+  <h2>كلب قوي بدون سيطرة… مسؤولية عليك.</h2>
+  <div class="sits">
+    <div class="sit">تقول له "اجلس" ثلاث مرات… وما يجلس.</div>
+    <div class="sit">يجيك ضيف، وتضطر تحبس الكلب في غرفة.</div>
+    <div class="sit">يفلت من الحوش، ويركض ولا يلتفت لك.</div>
+    <div class="sit">يسحبك في المشي، وأنت رجّال وما تقدر تمسكه.</div>
+    <div class="sit">يسمع لك أنت بس، والسواق والعامل خايفين منه.</div>
+    <div class="sit">شريته للحراسة، بس ما تثق فيه قدّام عيالك.</div>
+  </div>
+  <div class="truth">
+    <b>المشكلة مو في الكلب. المشكلة إن ما أحد علّمه مين القائد.</b>
+    <p>كلاب الحراسة ذكية وقوية، وتحتاج قيادة واضحة وتدريب منظم. بدونها، القوة اللي شريت الكلب عشانها تصير خطر. ومعها، يصير عندك كلب يحمي بيتك وينفّذ أمرك بدون تردد.</p>
+  </div>
+</div></section>
+
+<section class="band alt"><div class="in">
+  <p class="kick">ليش ما تأجّل؟</p>
+  <h2>كل شهر بدون تدريب، الكلب يكبر والمشكلة تكبر معه</h2>
+  <div class="risk">
+    <div><h3>عضّة وحدة تكفي</h3><p>ضيف، طفل، أو عامل. عضّة وحدة ممكن تكلّفك مشاكل كبيرة، وتكلّف الكلب حياته.</p></div>
+    <div><h3>كل ما كبر، صعب أكثر</h3><p>كلب ٤٠ كيلو بعادات غلط أصعب بكثير من جرو. أفضل وقت كان أمس، وثاني أفضل وقت اليوم.</p></div>
+    <div><h3>بيتك ما يرتاح</h3><p>تقفل عليه، تخاف يفلت، تعتذر للضيوف. الكلب المفروض يريّحك، مو يتعبك.</p></div>
+  </div>
+</div></section>
+
+<section class="band"><div class="in">
+  <p class="kick">المنهج</p>
+  <h2>٤ مراحل لطاعة مطلقة</h2>
+  <p class="muted" style="max-width:62ch;margin-top:8px">نفس الترتيب مع كل كلب. ما ننتقل لمرحلة قبل ما يثبت اللي قبلها.</p>
+  <ol class="stages">
+    <li><span class="n">المرحلة ١</span><h3>القيادة</h3><p>الكلب يعرف إنك أنت القائد. تواصل بالعين، هدوء، واحترام للمساحة.</p><span class="wk">الأسبوع ١</span></li>
+    <li><span class="n">المرحلة ٢</span><h3>الطاعة الأساسية</h3><p>اجلس، انبطح، انتظر، تعال، اترك. من أول أمر، وبصوت هادي.</p><span class="wk">الأسبوع ٢</span></li>
+    <li><span class="n">المرحلة ٣</span><h3>التحكم عن بعد</h3><p>ينفّذ وهو بعيد، وسط المشتتات، وبدون رسن. يرجع لك من أول نداء.</p><span class="wk">الأسبوع ٣</span></li>
+    <li><span class="n">المرحلة ٤</span><h3>الحراسة المنضبطة</h3><p>ينبّه على الغريب، يحمي لما يلزم، ويوقف فوراً بكلمة منك.</p><span class="wk">الأسبوع ٤</span></li>
+  </ol>
+  <p class="fine" style="margin-top:12px">وبعدها نسلّم الكلب لك ولأهل البيت والسواق، عشان الكل يقدر يتحكم فيه.</p>
+</div></section>
+
+<section class="band alt"><div class="in test">
+  <div style="display:grid;gap:14px">
+    <p class="kick">اختبار سريع</p>
+    <h2>كم نسبة سيطرتك على كلبك؟</h2>
+    <p class="muted">جاوب بصراحة على ٦ أسئلة. النتيجة تطلع لك فوراً، وتقدر ترسلها لعمّار مع طلب التقييم.</p>
+    <div class="score" aria-live="polite">
+      <span style="opacity:.75;font-size:.9rem">نسبة السيطرة</span>
+      <span class="big" id="s-num">–</span>
+      <div class="meter"><i id="s-bar"></i></div>
+      <p id="s-txt" style="opacity:.85">جاوب على الأسئلة عشان تطلع النتيجة.</p>
+      <a class="btn" href="#lead" id="s-cta">أبغى أرفع النسبة</a>
+    </div>
+  </div>
+  <div class="qs" id="qs"></div>
+</div></section>
+
+<section class="band" id="plans"><div class="in">
+  <p class="kick">البرامج</p>
+  <h2>اختر البرنامج اللي يناسب كلبك</h2>
+  <p class="muted" style="margin-top:8px">كل برنامج تقدر تاخذه مرة وحدة، أو باشتراك شهري أوفر بـ١٧٪. الأسعار بالريال.</p>
+  <div class="plans">
+    <div class="plan" data-key="obey">
+      <span class="for">للكلب اللي ما يسمع الكلام</span>
+      <h3>الطاعة الأساسية</h3>
+      <ul><li>المرحلتين ١ و٢</li><li>٤ جلسات في بيتك</li><li>اجلس، انبطح، انتظر، تعال، اترك</li><li>مشي بدون سحب</li><li>فيديو تمارين بعد كل جلسة</li></ul>
+      <div class="pp"></div>
+      <a class="btn line" href="#lead" data-pick="obey">أبغى الطاعة الأساسية</a>
+    </div>
+    <div class="plan hot" data-key="full">
+      <span class="badge">الأكثر طلباً</span>
+      <span class="for">للي يبغى طاعة مطلقة وحراسة منضبطة</span>
+      <h3>السيطرة الكاملة</h3>
+      <ul><li>المراحل الأربع كلها</li><li>٨ جلسات في بيتك</li><li>تحكم بدون رسن ورجوع من أول نداء</li><li>حراسة منضبطة: ينبّه ويوقف بأمرك</li><li>تسليم لأهل البيت والسواق</li><li>واتساب مباشر مع عمّار</li></ul>
+      <div class="pp"></div>
+      <a class="btn" href="#lead" data-pick="full">أبغى السيطرة الكاملة</a>
+    </div>
+    <div class="plan" data-key="camp">
+      <span class="for">للي وقته ضيّق أو كلبه صعب</span>
+      <h3>معسكر التدريب</h3>
+      <ul><li>الكلب يقيم معنا ٣ إلى ٤ أسابيع</li><li>تدريب يومي على المراحل الأربع</li><li>تقرير وفيديو كل أسبوع</li><li>جلستين تسليم في بيتك</li><li>٩٠ يوم متابعة بعد الاستلام</li></ul>
+      <div class="pp"></div>
+      <a class="btn line" href="#lead" data-pick="camp">أبغى المعسكر</a>
+    </div>
+  </div>
+  <div class="guar"><b>ضماننا</b><span>إذا ما شفت تقدّم واضح بعد أول جلستين، الجلستين اللي بعدها علينا. [للتأكيد]</span></div>
+  <div class="entry">
+    <div><b>مو متأكد وش يناسب كلبك؟</b><p class="muted" style="font-size:.95rem">ابدأ بالتقييم المجاني على واتساب. وإذا احتاج الكلب زيارة تقييم في بيتك (٥٠٠ ريال)، تنخصم كاملة من أي برنامج.</p></div>
+    <a class="btn" href="#lead">احجز التقييم المجاني</a>
+  </div>
+</div></section>
+
+<section class="band alt"><div class="in">
+  <h2>أسئلة يسألونها كثير</h2>
+  <div style="margin-top:14px;max-width:820px">
+    <details><summary>هل التدريب يخلي الكلب أقل شراسة في الحراسة؟</summary><p>لا. التدريب يخلي الحراسة تحت سيطرتك. الكلب يبقى ينبّه ويحمي، بس يوقف لما تقول له. هذا الفرق بين كلب حراسة وكلب خطر.</p></details>
+    <details><summary>كلبي كبير وعمره أكثر من ٣ سنوات، ينفع؟</summary><p>إيوه. الكلب الكبير ياخذ وقت أطول شوي، بس يتعلم. نبدأ بالتقييم ونعطيك خطة واقعية.</p></details>
+    <details><summary>وش أسلوبك في التدريب؟</summary><p>قيادة واضحة، تكرار، ومكافأة. حزم بدون ضرب وبدون أطواق صعق. الكلب اللي يطيعك عن احترام أثبت من الكلب اللي يطيعك عن خوف.</p></details>
+    <details><summary>أقدر أحضر التدريب؟</summary><p>لازم. أنت القائد، فلازم تتدرب معه. وفي المعسكر نسوي لك جلستين تسليم عشان تستلمه وتعرف تتحكم فيه.</p></details>
+    <details><summary>وين يقيم الكلب في المعسكر؟</summary><p>[اسم ومكان مزرعة التدريب الشريكة: للتأكيد]</p></details>
+    <details><summary>كيف أدفع؟</summary><p>مدى، Apple Pay، أو STC Pay. [للتأكيد]</p></details>
+  </div>
+</div></section>
+
+<section class="band"><div class="in">
+  <div class="final">
+    <h2>خلّ كلبك يشتغل لك… مو عليك.</h2>
+    <p>أستقبل عدد محدود من الكلاب كل شهر عشان أعطي كل كلب حقه. التقييم مجاني وياخذ ١٠ دقائق على واتساب.</p>
+    <a class="btn" href="#lead">احجز التقييم المجاني</a>
+    <p class="num">WhatsApp: +966 5X XXX XXXX</p>
+  </div>
+</div></section>
+</main>
+<footer>كوتش عمّار · تدريب كلاب الحراسة والطاعة · جدة · الأسعار بالريال السعودي</footer>
+<div class="sticky"><a class="btn" href="#lead">تقييم مجاني لكلبك</a></div>
+
+<script>
+const WA="966500000000"; // [ضع رقم واتساب عمّار هنا]
+const fmt=n=>n.toLocaleString("ar-SA");
+const sar=n=>`${fmt(n)} ريال`;
+const PLANS={obey:{name:"الطاعة الأساسية",once:3500,month:2900},full:{name:"السيطرة الكاملة",once:6500,month:5400},camp:{name:"معسكر التدريب",once:12000}};
+document.querySelectorAll(".plan").forEach(c=>{const p=PLANS[c.dataset.key];
+  c.querySelector(".pp").innerHTML=p.month
+   ?`<div><small>مرة واحدة</small><strong>${sar(p.once)}</strong></div><div class="mo"><small>شهري · وفّر ${fmt(Math.round((1-p.month/p.once)*100))}٪</small><strong>${sar(p.month)}</strong></div>`
+   :`<div class="solo"><small>مرة واحدة · ٣ إلى ٤ أسابيع</small><strong>${sar(p.once)}</strong></div>`});
+
+/* control test */
+const QS=["يجلس من أول أمر، حتى لو فيه ضيوف؟","يرجع لك من أول نداء وهو بعيد؟","يمشي جنبك بدون ما يسحب؟","يوقف نباحه أو هجومه بكلمة منك؟","يسمع كلام أهل البيت أو السواق، مو بس أنت؟","تقدر تفتح الباب لضيف وهو هادي؟"];
+const ans=Array(QS.length).fill(null);
+const qbox=document.getElementById("qs");
+qbox.innerHTML=QS.map((q,i)=>`<div class="q"><span>${q}</span><div class="yn" role="group" aria-label="${q}"><button type="button" class="y" data-i="${i}" data-v="1" aria-pressed="false">نعم</button><button type="button" class="n" data-i="${i}" data-v="0" aria-pressed="false">لا</button></div></div>`).join("");
+let scoreTxt="";
+qbox.querySelectorAll("button").forEach(b=>b.onclick=()=>{const i=+b.dataset.i;ans[i]=+b.dataset.v;
+  b.parentElement.querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",x===b));renderScore()});
+function renderScore(){const done=ans.filter(a=>a!==null).length;if(!done)return;
+  const pct=Math.round(ans.reduce((s,a)=>s+(a||0),0)/QS.length*100);
+  document.getElementById("s-num").textContent=`${fmt(pct)}٪`+(done<QS.length?` (${fmt(done)} من ${fmt(QS.length)})`:"");
+  document.getElementById("s-bar").style.width=pct+"%";
+  const t=pct>=84?"سيطرة ممتازة. نقدر نشتغل على التحكم عن بعد والحراسة المنضبطة.":pct>=50?"فيه أساس، بس الكلب ما يسمع كل مرة. هذا المكان اللي تصير فيه الحوادث.":"الكلب يقرر بداله. يحتاج قيادة وطاعة من الأساس، وكل ما بدينا أسرع كان أسهل.";
+  document.getElementById("s-txt").textContent=t;
+  scoreTxt=done===QS.length?`${pct}%`:"";setWA()}
+
+/* lead form -> WhatsApp */
+let picked="";
+document.querySelectorAll(".chip").forEach(c=>{c.setAttribute("aria-pressed","false");c.onclick=()=>{c.setAttribute("aria-pressed",c.getAttribute("aria-pressed")!=="true");setWA()}});
+document.querySelectorAll("[data-pick]").forEach(a=>a.addEventListener("click",()=>{picked=a.dataset.pick;setWA()}));
+["f-breed","f-age","f-area","f-name"].forEach(id=>document.getElementById(id).addEventListener("input",setWA));
+const val=id=>document.getElementById(id).value;
+function setWA(){const probs=[...document.querySelectorAll('.chip[aria-pressed="true"]')].map(c=>c.dataset.v);const name=val("f-name").trim();
+  let msg=`السلام عليكم كوتش عمّار${name?`، معك ${name}`:""}\nأبغى التقييم المجاني لكلبي.\n• السلالة: ${val("f-breed")||"-"}\n• العمر: ${val("f-age")||"-"}\n• المشكلة: ${probs.join("، ")||"-"}\n• الحي: ${val("f-area")||"-"}`;
+  if(scoreTxt)msg+=`\n• نتيجة اختبار السيطرة: ${scoreTxt}`;
+  if(picked)msg+=`\n• مهتم بـ: ${PLANS[picked].name}`;
+  document.getElementById("f-send").href=`https://wa.me/${WA}?text=${encodeURIComponent(msg)}`}
+document.getElementById("f-send").addEventListener("click",e=>{const ok=document.querySelectorAll('.chip[aria-pressed="true"]').length>0&&val("f-breed")!=="";
+  document.getElementById("f-err").hidden=ok;if(!ok)e.preventDefault()});
+document.getElementById("lead").addEventListener("submit",e=>e.preventDefault());
+setWA();
+</script>
+
+</body></html>
